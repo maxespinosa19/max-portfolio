@@ -7,12 +7,40 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'pink': '#FF83E4',
+        'green': '#89F7AA',
+        'purple': '#4B1E83',
+        'light-pink': '#FFBEF1'
+        
       },
+      animation: {
+        'gradient-y': 'gradient-y 15s ease infinite',
+      },
+      keyframes: {
+        'gradient-y': {  
+          '0%, 100%': {
+            'background-size': '400% 400%',
+            'background-position': 'center top',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'center center',
+          },
+        },
+      },
+    },
+    fontFamily: {
+      raleway: ['Raleway', 'sans-serif'],
+      gochi: ['Gochi Hand', 'cursive'],
+      mohave: ['Mohave', 'sans-serif'],
+      museo: ['MuseoModerno', 'cursive'],
+      
+
     },
   },
   plugins: [],
-}
+};
+
+
+
